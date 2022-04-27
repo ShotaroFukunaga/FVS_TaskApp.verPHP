@@ -6,12 +6,14 @@
 	$user_name = $_POST['user_name'];
 	$user_email = $_POST['user_email'];
 	$user_password = $_POST['user_password'];
+  $user_password_confirmation = $_POST['user_password_confirmation'];
 
   $_SESSION['errors'] = [];
 
   emptyCheck($_SESSION['errors'],$user_name,"ユーザー名を入力してください。");
   emptyCheck($_SESSION['errors'],$user_email,"メールアドレスを入力してください。");
   emptyCheck($_SESSION['errors'],$user_password,"パスワードを入力してください。");
+  password_confirmationCheck($_SESSION['errors'], $user_password, $user_password_confirmation, "パスワードが間違っています。");
 
   stringMaxSizeCheck($_SESSION['errors'],$user_name,"ユーザー名は255文字以内で入力してください。");
   stringMaxSizeCheck($_SESSION['errors'],$user_email,"メールアドレスは255文字以内で入力してくだい。");
@@ -46,8 +48,8 @@
 			$statement->execute();
 
       $_SESSION['user'] = [
-        'name' = $user_name,
-        'id' => $database_handler->lastinsertid() //L?I？
+        'name' => $user_name,
+        'id' => $database_handler->lastinsertid()
       ];
 		}
 	}catch(Throwable $e){

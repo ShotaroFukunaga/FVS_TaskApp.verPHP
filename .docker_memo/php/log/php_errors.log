@@ -88,3 +88,24 @@ Stack trace:
 [27-Apr-2022 13:42:43 Asia/Tokyo] PHP Fatal error:  require(): Failed opening required '../../commond/database.php' (include_path='.:/usr/local/lib/php') in /var/www/html/memo/action/delete.php on line 3
 [27-Apr-2022 14:06:04 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 20
 [27-Apr-2022 14:06:04 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 21
+[27-Apr-2022 15:40:56 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/user/action/register.php on line 45
+[27-Apr-2022 17:16:07 Asia/Tokyo] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /var/www/html/memo/action/search.php on line 18
+[27-Apr-2022 17:22:40 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 20
+[27-Apr-2022 17:22:40 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 21
+[27-Apr-2022 17:22:47 Asia/Tokyo] PHP Warning:  include_once(../common/header.php): failed to open stream: No such file or directory in /var/www/html/memo/action/search.php on line 37
+[27-Apr-2022 17:22:47 Asia/Tokyo] PHP Warning:  include_once(): Failed opening '../common/header.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/memo/action/search.php on line 37
+[27-Apr-2022 17:22:47 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function getHeader() in /var/www/html/memo/action/search.php:38
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/memo/action/search.php on line 38
+[27-Apr-2022 17:24:19 Asia/Tokyo] PHP Notice:  Undefined variable: user_name in /var/www/html/memo/action/search.php on line 47
+[27-Apr-2022 18:47:52 Asia/Tokyo] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /var/www/html/memo/index.php on line 25
+[27-Apr-2022 18:47:53 Asia/Tokyo] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /var/www/html/memo/index.php on line 25
+[27-Apr-2022 18:48:32 Asia/Tokyo] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /var/www/html/memo/index.php on line 25
+[27-Apr-2022 18:57:06 Asia/Tokyo] PHP Notice:  Undefined index: search in /var/www/html/memo/index.php on line 15
+[27-Apr-2022 18:58:26 Asia/Tokyo] PHP Notice:  Undefined index: search in /var/www/html/memo/index.php on line 15
+[27-Apr-2022 18:58:26 Asia/Tokyo] PHP Notice:  Undefined index: search in /var/www/html/memo/index.php on line 15
+[27-Apr-2022 19:22:43 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 20
+[27-Apr-2022 19:22:43 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 21
+[27-Apr-2022 19:30:09 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 20
+[27-Apr-2022 19:30:09 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 21

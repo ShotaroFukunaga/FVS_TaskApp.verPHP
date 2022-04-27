@@ -23,6 +23,6 @@
         'title' => $result['title'],
         'content' => $result['content']
     ];
-    header('Location: ../../memo/');
+    header('Location: ../../memo/show.php');
     exit;
 

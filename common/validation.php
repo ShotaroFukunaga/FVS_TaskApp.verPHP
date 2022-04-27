@@ -80,3 +80,10 @@ function mailAddressDuplicationCheck(&$errors, $check_value, $message) {
         array_push($errors, $message);
     }
 } 
+
+//確認用パスワードチェック
+function password_confirmationCheck(&$errors, $user_password, $user_password_confirmation, $message){
+	if($user_password != $user_password_confirmation){
+		array_push($errors,$message);
+	}
+}
